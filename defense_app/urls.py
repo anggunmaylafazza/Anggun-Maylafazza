@@ -6,7 +6,7 @@ urlpatterns = [
     path('student/',student_defense_status),
     path('staff/supervisor/defense-list/', supervisor_list_defense_requests),
     path('staff/supervisor/defense/<int:research_id>/', supervisor_get_defense_detail),
-    path('staff/supervisor/<int:research_id>/approval', supervisor_approve_defense),
+    path('staff/supervisor/<int:approval_id>/approval', supervisor_approve_defense),
     path('admin/defense/approval/', admin_list_defense_approvals),
     path('admin/defense/approval/<int:approval_id>/set_schedule', admin_set_defense_schedule),
     path('admin/defense/approval/<int:applicant_id>/assign_examiner', admin_assign_examiner),
